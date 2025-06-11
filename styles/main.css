@@ -49,7 +49,6 @@ body {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  /* layout horizontal por defecto */
   flex-direction: row;
   flex-wrap: nowrap;
 }
@@ -61,14 +60,3 @@ body {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* En mobile: cambiar a columna */
-@media (max-width: 768px) {
-  .image-grid {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .image-grid img {
-    max-width: 90%;
-  }
-}
