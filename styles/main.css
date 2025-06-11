@@ -1,7 +1,7 @@
 body {
   font-family: 'Helvetica Neue', sans-serif;
   margin: 0;
-  padding: 40px;
+  padding: 40px 20px;
   background-color: #f5f0ec;
   color: #2e2e2e;
 }
@@ -12,6 +12,7 @@ body {
   font-size: 0.9rem;
   letter-spacing: 1px;
   margin-bottom: 2rem;
+  flex-wrap: wrap;
 }
 
 .container {
@@ -41,12 +42,14 @@ body {
   font-size: 0.95rem;
   line-height: 1.6;
   margin-bottom: 2rem;
+  padding: 0 10px;
 }
 
 .image-grid {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .image-grid img {
@@ -54,4 +57,30 @@ body {
   max-width: 350px;
   border-radius: 6px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .image-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-grid img {
+    max-width: 90%;
+  }
 }
