@@ -60,3 +60,20 @@ body {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+a:link {
+  color: #a981b8;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #a98;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #2e2e2e;
+}
+
+a:active {
+  color: #a981b8;
+}
